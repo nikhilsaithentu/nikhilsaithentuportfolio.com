@@ -1,0 +1,53 @@
+/* Resetting default margin and padding */
+.skills-container,
+.skills-container h2,
+.skills-container ul,
+.skills-container li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+.skills-container {
+    max-width: 800px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding */
+    
+}
+
+.skills-container ul {
+    list-style-type: none; /* Remove the default list style */
+    margin-top: 20px; /* Add some top margin */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly along the row */
+}
+
+.skills-container li {
+    width: calc(25% - 20px); /* Set width of each skill item (25% of container width minus margin) */
+    margin-bottom: 20px; /* Add bottom margin between rows */
+}
+
+.skill {
+    display: inline-block;
+    width: 100px; /* Adjust the width of each square */
+    height: 100px; /* Adjust the height of each square */
+    background-color: black; /* Set the background color of each square */
+    margin: 10px; /* Add some margin around each square */
+}
+
+.skill img {
+    display: block;
+    width: 80%; /* Reduce the width of the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 10%; 
+}
+.skill-name {
+    font-family: "Cascadia Mono SemiBold"; /* Change the font family to Arial or any other preferred font */
+}
+#skills h2 {
+    margin-left: 90px; /* Adjust the left margin to move the title to the right */
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: Bahnschrift Light;
+}

@@ -1,0 +1,40 @@
+/* Centering the contact info horizontally */
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the contact squares */
+.contact-item {
+    width: 130px; /* Adjust the width of each square */
+    height: 130px; /* Let the height adjust to content */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Adjust the gap between contact items */
+    border-radius: 20%;
+    padding-top: 50px;
+}
+
+/* Styling the contact item images */
+.contact-item img {
+    width: 100px; /* Adjust the size of the image */
+    height: 100px; /* Adjust the size of the image */
+    border-radius: 10%; /* Make the image circular */
+    margin-bottom: 10px; /* Adjust the space between image and text */
+    top: 50px;
+    align-self: center;
+
+    
+}
+
+
+ Styling the contact links 
+.contact-item a {
+    color: white;  
+     text-decoration: none;  
+    font-size: 10px; 
+ } 

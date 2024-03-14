@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    background-color: #DA781D;
+    top: 0;
+}
+.home-content{
+    color: #DA781D;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in-out 1s forwards;
+}
+
+header {
+    background-color: rgb(10, 10, 10); /* Orange background for header */
+    color: white;
+    padding: 50px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color:#DA781D;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: orange;
+}
+
+.home-content {
+    position: relative; /* Positioning context for absolute positioning */
+    background-color:#DA781D;
+    /* background-color:; Grey background for home content */
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* Align content in the center */
+}
+
+.home-content .profile-picture {
+    position: absolute;
+    top: 300%; /* Position at vertical center */
+    right: 60%; /* Align to right end */
+    left:50%;
+    
+    width: 80%;
+    height: 10%;
+    /* transform: translateY(-100%); /* Adjust vertically to center */
+} */
+
+.home-content .profile-picture img {
+    width: 150px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me {
+    background-color: rgb(5, 5, 5); /* Orange background for about me section */
+    padding: 80px;
+    position: absolute;
+    width:50%;
+    right:90%;
+    
+    top: 500%; /* Position slightly lower */
+    left: 10%; /* Position to the left end */
+    transform: translate(-50%, -50%); /* Adjust horizontally and vertically to center */
+    font-family: Bahnschrift Light;
+    font-size: 10pxs;
+}
+
+.about-me h3 {
+    color: white; /* Text color */
+    font-family:Engravers MT;
+    font-size: 30px;
+}
+
+.about-me p {
+    color: white; /* Text color */
+}
+header h1{
+    font-family:"Bahnschrift Light Condensed";
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .home-content, .about-me {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .home-content, .about-me {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1025px) {
+    .home-content, .about-me {
+        width: 60%;
+    }
+}
+
+
+

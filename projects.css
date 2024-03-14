@@ -1,0 +1,110 @@
+/* Resetting default margin and padding */
+.projects,
+.projects h2,
+.projects .project {
+    
+    margin: 10px;
+    padding: 40px;
+    left: 10%;
+    right: 50%;
+}
+
+
+/* Global styles */
+.projects {
+    
+    max-width: 1200px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add some padding */
+    
+}
+
+ h2 {
+    margin-bottom: 30px; /* Add some bottom margin for the title */
+    font-size: 90px;
+   font-family: Felix Titling;
+   left: 40%;
+
+}
+
+.project {
+    width: calc(30% - 20px); /* Set width of each project (30% of container width minus margin) */
+    background-color: black; /* Set the background color of each project */
+    color: white; /* Set the text color */
+    padding: 110px; /* Add some padding */
+    margin-right: 40px; /* Add right margin between projects */
+    margin-bottom: 40px; /* Add bottom margin between projects */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: inline-block; /* Display projects side by side */
+    vertical-align:middle; /* Align projects to the top */
+    
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    width: 400px;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.project:last-child {
+    margin-right: 0; /* Remove right margin for the last project to prevent overflow */
+}
+
+.project h3 {
+    color: orange; /* Set the color of project name */
+    margin-bottom: 10px; /* Add bottom margin for project name */
+    
+}
+
+.project p {
+    margin-bottom: 10px; /* Add bottom margin for project description */
+    font-size: 120;
+}
+
+.project .project-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content:space-between; /* Evenly space images */
+    align-items: center; /* Center images vertically */
+    height: auto; /* Allow images container to adjust its height based on content */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+    
+
+}
+
+.project img {
+    width: 20%; /* Ensure images take up the full width of their container */
+    height: auto; /* Allow images to adjust their height based on width */
+    margin-bottom: 10px; /* Add some bottom margin between images */
+    border-radius: 5px; /* Apply border-radius to images */
+    display: block;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.project:hover {
+    transform: scale(1.1); /* Scale up the project on hover */
+}
+.project span{
+    text-align:bottom;
+}
+.image-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color:white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.projects-background:target {
+    background-color: black; /* New background color */
+}
